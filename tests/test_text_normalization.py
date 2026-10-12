@@ -338,6 +338,7 @@ EXAMPLES = {  # id: (language, book_config, input, expected output)
     "label-cs": ("cs", None, "Kapitola 1 začíná.", "Kapitola jedna začíná."),
     "same-form-in-every-case": ("cs", None, "Pak začalo XXI. století.", "Pak začalo dvacáté první století."),
     "tagger-gender-fix": ("sk", None, "Potom vyšiel 2. diel.", "Potom vyšiel druhý diel."),
+    "tagger-gender-fix-2": ("cs", None, "Mám 2 šálky a 2 psy.", "Mám dva šálky a dva psy."),
     "ordinal-range": ("cs", None, "Od 1.–5. ledna.", "Od prvního až pátého ledna."),
     "shared-noun": ("cs", None, "Přelom XIX. a XX. století.", "Přelom devatenáctého a dvacátého století."),
     "noun-after-tisíc": ("cs", None, "S 1 000 Kč vyrazil.", "S tisícem korun vyrazil."),
