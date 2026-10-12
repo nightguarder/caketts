@@ -169,7 +169,9 @@ SK_ANIMAL_PLURALS = frozenset("vlci býci vtáci psi orli sokoli holubi levi tig
 
 # forms the tagger misreads, with the features they have: UD Slovak-SNK takes "diel" (a part or
 # volume, masculine) for feminine, even alone
-FEATURE_FIXES = {"cs": {},
+FEATURE_FIXES = {"cs": {"šálky": {"Gender": "Masc", "Animacy": "Inan"},
+                        "šálků": {"Gender": "Masc", "Animacy": "Inan"},
+                        "šálku": {"Gender": "Masc", "Animacy": "Inan"}},
                  "sk": {"diel": {"Gender": "Masc", "Animacy": "Inan", "Number": "Sing", "Case": "Nom"},
                         "diely": {"Gender": "Masc", "Animacy": "Inan", "Number": "Plur"},
                         "dielov": {"Gender": "Masc", "Animacy": "Inan", "Number": "Plur", "Case": "Gen"}}}
